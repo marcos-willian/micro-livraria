@@ -21,7 +21,6 @@ server.addService(inventoryProto.InventoryService.service, {
         });
     },
     SearchProductByID: (playload, callback) => {
-
         callback(null, 
             products.find((product) => product.id == playload.request.id)
         );
